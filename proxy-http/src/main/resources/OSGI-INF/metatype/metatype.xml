@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+/**
+ * Copyright (c) Codice Foundation
+ *
+ * This is free software: you can redistribute it and/or modify it under the terms of the GNU Lesser General Public License as published by the Free Software Foundation, either
+ * version 3 of the License, or any later version. 
+ *
+ * This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+ * See the GNU Lesser General Public License for more details. A copy of the GNU Lesser General Public License is distributed along with this program and can be found at
+ * <http://www.gnu.org/licenses/lgpl.html>.
+ *
+ **/
+
+ -->
+<metatype:MetaData xmlns:metatype="http://www.osgi.org/xmlns/metatype/v1.0.0">
+
+	<OCD name="HTTP Proxy" id="ddf.platform.proxy.http.HttpProxy">
+		<AD
+			description="The URI of the Http Proxy"
+			name="Proxy URI" id="proxyUri" required="true"
+			type="String" default="http://0.0.0.0:8080/proxy" />
+		
+		<AD
+			description="The URI of the Target External System"
+			name="Target URI URI" id="targetUri" required="true"
+			type="String" default="http://192.168.1.1:8080/targetSystem" />
+			
+	</OCD>
+
+	<Designate pid="ddf.platform.proxy.http.HttpProxy" 
+	           factoryPid="ddf.platform.proxy.http.HttpProxy">
+		<Object ocdref="ddf.platform.proxy.http.HttpProxy" />
+	</Designate>
+
+</metatype:MetaData>

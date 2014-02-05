@@ -31,6 +31,8 @@
 	<properties>
 		<cxf.version>2.7.8</cxf.version>
 		<cxf.jaxb.version>2.2.4</cxf.jaxb.version>
+		<!-- Older version of jetty due to null pointer bug -->
+		<jetty.version>7.5.4.v20111024</jetty.version>
 	</properties>
 
 	<dependencyManagement>
@@ -191,6 +193,7 @@
 
 
 	<modules>
+		<module>proxy-http</module>
 		<module>platform-configuration</module>
         <module>platform-status</module>
 		<module>action</module>

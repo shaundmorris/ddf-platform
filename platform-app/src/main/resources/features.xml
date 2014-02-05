@@ -43,6 +43,7 @@
     <feature version='2.12.1'>camel-core</feature>
     <feature version='2.12.1'>camel-spring</feature>
     <feature version='2.12.1'>camel-blueprint</feature>
+	<feature version='2.12.1'>camel-jetty</feature>
   </feature>
   <feature name='camel-core' install='manual' version='2.12.1' resolver='(obr)' start-level='50'>
     <feature version='2.2.0'>xml-specs-api</feature>
@@ -555,7 +556,20 @@
         <feature>action-core-api</feature>
         <bundle>mvn:ddf.action.core/action-core-impl/${project.version}</bundle>
     </feature>
-    
+
+    <feature name="cache-core-api" install="manual" version="${project.version}" description="DDF Cache API">
+        <bundle>mvn:ddf.cache.core/cache-core-api/${project.version}</bundle>
+    </feature>
+
+    <feature name="cache-core" install="manual" version="${project.version}" description="DDF Cache Core">
+        <feature>cache-core-api</feature>
+        <bundle>mvn:ddf.cache.core/cache-core-impl/${project.version}</bundle>
+    </feature>
+	
+	<feature name="proxy-http" install="manual" version="${project.version}" description="DDF Http Proxy">
+        <bundle>mvn:ddf.platform/proxy-http/${project.version}</bundle>
+    </feature>
+
     <feature name="mime-core-api" install="manual" version="${project.version}" description="DDF MIME API">
         <bundle>mvn:ddf.mime.core/mime-core-api/${project.version}</bundle>
     </feature>
@@ -620,6 +634,8 @@
         <feature>platform-configuration</feature>
 		<feature>action-core-api</feature>
         <feature>action-core-impl</feature>
+        <feature>cache-core</feature>
+		<feature>proxy-http</feature>
         <feature>mime-core</feature>
         <feature>mime-tika-resolver</feature>
         <feature>security-encryption</feature>
