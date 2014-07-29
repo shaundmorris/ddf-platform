@@ -276,7 +276,7 @@
 					<version>${maven.cobertura.version}</version>
 			
 				</plugin>
-		
+		</plugins>
 		</pluginManagement>
     </build>
 
