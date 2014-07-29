@@ -12,8 +12,8 @@
 -->
 <img src="https://tools.codice.org/wiki/download/attachments/3047458/ddf.jpg"/>
 # [Distributed Data Framework Platform \(DDF-Platform\)](https://tools.codice.org/wiki/display/DDF/DDF+Platform+Application)
-[![Build Status](https://travis-ci.org/codice/ddf-platform.png?branch=master)](https://travis-ci.org/codice/ddf-platform)
-
+[![Build Status](https://travis-ci.org/shaundmorris/ddf-platform.png?branch=master)](https://travis-ci.org/codice/ddf-platform)
+[![Coverage Status](https://coveralls.io/repos/shaundmorris/ddf-platform/badge.png)](https://coveralls.io/r/shaundmorris/ddf-platform)
 
 DDF-Platform is an open source app integrated with the DDF integration framework. 
 
