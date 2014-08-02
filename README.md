@@ -18,6 +18,7 @@
   <img alt="Coverity Scan Build Status"
        src="https://scan.coverity.com/projects/2693/badge.svg"/>
 </a>
+[![Dependency Status](https://www.versioneye.com/user/projects/53dce5763cf5407686000099/badge.svg?style=flat)](https://www.versioneye.com/user/projects/53dce5763cf5407686000099)
 
 DDF-Platform is an open source app integrated with the DDF integration framework. 
 
